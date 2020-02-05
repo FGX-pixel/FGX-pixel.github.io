@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0%;
+        }
+        .blockline {
+            display: block;
+            width: 95%;
+            min-height: 5%;
+            padding-left: 5%;
+            margin: 0%;
+
+            background-color: #555;
+            color: white;
+        }
+        .tile {
+            width: 30%;
+            position: relative;
+            display: inline-block;
+            background-color: orange;
+            color: black;
+            margin: 1%;
+
+            padding-top: 30%;
+        }
+        .content {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 3%;
+            overflow: hidden;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .tile:hover {
+            background-color: #555;
+            color: white;
+        }
+        .tile img {
+            margin-left: 15%;
+            margin-top: 5%;
+            
+            width: 70%;
+        }
+    </style>
+    <body>
+        <h1 class="blockline">Main</h1>
+        <div>
+            <a class="tile" href="m.html">
+                <div class="content">Home</div>
+            </a>
+            <a class="tile" href="index.html">
+                <div class="content">Desktop</div>
+            </a>
+        </div>
+
+
+        <h1 class="blockline">Data Science</h1>
+        <div>
+            <a class="tile" href="pages/meteorite_app.html">
+                <div class="content">Meteorite App</div>
+            </a>
+            <a class="tile" href="pages/coffee_app.html">
+                <div class="content">Coffee App<br>
+                    coming soon!
+                </div>
+            </a>
+            <div class="tile">
+                <div class="content">#3<br>
+                    coming soon!
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="blockline">Links</h1>
+        <div>
+            <a class="tile" href="https://www.linkedin.com/in/christian-forster-05326b123/">
+                <div class="content">LinkedIn</div>
+            </a>
+            <a class="tile" href="https://github.com/FGX-pixel">
+                <div class="content">Github</div>
+            </a>
+        </div>
+    </body>
+</html>
