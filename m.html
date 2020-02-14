@@ -4,6 +4,10 @@
     <style>
         body {
             margin: 0%;
+            background-color: #f1f1f1;
+        }
+        li {
+            display: inline;
         }
         .blockline {
             display: block;
@@ -15,19 +19,30 @@
             background-color: #555;
             color: white;
         }
+        .category {
+            list-style-type: none;
+            margin-bottom: 1%;
+            padding: 0;
+            width: 100%;
+            overflow: auto;
+
+            border-left: solid;
+            border-color: orange;
+            border-width: 5px;
+        }
         .tile {
             width: 30%;
             position: relative;
             display: inline-block;
-            background-color: orange;
+            background-color: #dddddd;
             color: black;
-            margin: 1%;
+            margin-left: 1%;
 
             padding-top: 30%;
         }
         .content {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
             margin: 3%;
             overflow: hidden;
 
@@ -50,41 +65,60 @@
     </style>
     <body>
         <h1 class="blockline">FGX-pixel</h1>
-        <div>
-            <a class="tile" href="index.html">
-                <div class="content">Desktop</div>
-            </a>
-            <a class="tile" href="media/forster_cv.pdf">
-                <div class="content">CV</div>
-            </a>
-            <a class="tile" href="media/forster_cv_de.pdf">
-                <div class="content">Lebenslauf</div>
-            </a>
-        </div>
 
+        <ul class="category">
+            <li>
+                <a class="tile" href="index.html">
+                    <div class="content">Desktop</div>
+                </a>
+            </li>
+            <li>
+                <a class="tile" href="pages/cv.html">
+                    <div class="content">CV, <br> HTML for mobile</div>
+                </a>
+            </li>
+            <li>
+                <a class="tile" href="media/forster_cv.pdf">
+                    <div class="content">CV</div>
+                </a>
+            </li>
+            <li>
+                <a class="tile" href="media/forster_cv_de.pdf">
+                    <div class="content">Lebenslauf</div>
+                </a>
+            </li>
+        </ul>
 
-        <h2 class="blockline">Data Science</h2>
-        <div>
-            <a class="tile" href="pages/meteorite_app.html">
-                <div class="content">Meteorite App</div>
-            </a>
-            <a class="tile" href="pages/coffee_app.html">
-                <div class="content">Coffee App</div>
-            </a>
-            <a class="tile" href="pages/construction.html">
-                <div class="content">Customizable UI</div>
-            </a>
-        </div>
+        <ul class="category" style="border-color: blue;">
+            <li>
+                <a class="tile" href="pages/meteorite_app.html">
+                    <div class="content">Meteorite App</div>
+                </a>
+            </li>
+            <li>
+                <a class="tile" href="pages/coffee_app.html">
+                    <div class="content">Coffee App</div>
+                </a>
+            </li>
+            <li>
+                <a class="tile" href="pages/classification_app.html">
+                    <div class="content">Classification App</div>
+                </a>
+            </li>
+        </ul>
 
+        <ul class="category" style="border-color: green;">
+            <li>
+                <a class="tile" href="https://www.linkedin.com/in/christian-forster-05326b123/">
+                    <div class="content">LinkedIn</div>
+                </a>
+            </li>
+            <li>
+                <a class="tile" href="https://github.com/FGX-pixel">
+                    <div class="content">Github</div>
+                </a>
+            </li>
+        </ul>
 
-        <h2 class="blockline">Links</h2>
-        <div>
-            <a class="tile" href="https://www.linkedin.com/in/christian-forster-05326b123/">
-                <div class="content">LinkedIn</div>
-            </a>
-            <a class="tile" href="https://github.com/FGX-pixel">
-                <div class="content">Github</div>
-            </a>
-        </div>
     </body>
 </html>
